@@ -44,11 +44,9 @@ class Mage(Hero):
         else:
             return f"Способность '{ability_name}' не найдена."
 
-# Создаём объект класса Mage
 mage = Mage("Валир", 100, 120)
 print(mage.introduce())
 
-# Цикл для выбора и использования способностей
 while True:
     user_input = input("Введите название способности (fireball, pillar_of_fire, fire_prison) или 'exit' для выхода: ").strip().lower()
 
